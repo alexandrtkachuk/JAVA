@@ -1,3 +1,12 @@
+package myPack;
+
+/*
+ * create pack:
+ * jar -cvfm mypack.jar myPack/Manifest.txt  myPack/*.class
+ *
+ * run pack:
+ * java -jar mypack.jar
+ * */
 import java.lang.Thread;
 
 class Test implements Runnable
@@ -13,8 +22,6 @@ class Test implements Runnable
 
 }
 
-
-
 class myThread
 {
     public static void main(String args[])
@@ -29,7 +36,7 @@ class myThread
 
 	System.out.println("runing Thread!");
 
-	for(int i =0;i<100;i++)
+	for(int i =0;i<1000;i++)
 	{
 	    System.out.println(i);
 	}
